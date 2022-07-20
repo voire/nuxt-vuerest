@@ -1,9 +1,20 @@
 {
   "name": "@voire/nuxt-vuerest",
+  "description": "Nuxt module for Vuerest RESTful composables",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
   "author": "Pavel Yankovski <https://github.com/pyncz>",
+  "keywords": [
+    "typescript",
+    "vue",
+    "vue3",
+    "vue-next",
+    "composable",
+    "nuxt",
+    "nuxt3",
+    "nuxt-module"
+  ],
   "exports": {
     ".": {
       "import": "./dist/module.mjs",

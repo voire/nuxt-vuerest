@@ -21,7 +21,7 @@ jobs:
       - name: Install deps and build
         run: |
           yarn install --frozen-lockfile
-          yarn run build
+          yarn run prepack
         env:
           CI: true
       - name: Semantic release
