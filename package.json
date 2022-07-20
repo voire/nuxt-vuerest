@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-vuerest",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "author": "Pavel Yankovski <https://github.com/pyncz>",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.6",
+    "@voire/vuerest": "^1.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "eslint": "^8.20.0",
+    "eslint-plugin-nuxt": "^3.1.0",
+    "nuxt": "^3.0.0-rc.6",
+    "typescript": "^4.7.4"
+  }
+}
